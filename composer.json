@@ -1,7 +1,7 @@
 {
     "name": "qlwz/byte-buffer",
     "description": "ByteBuffer",
-    "license": "Apache",
+    "license": "MIT",
     "authors": [
         {
             "name": "qlwz",
