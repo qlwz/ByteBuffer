@@ -32,7 +32,11 @@ class ByteBuffer
         switch (gettype($value)) {
             case 'integer':
                 $this->position = 0;
-                $this->buffer   = str_repeat("\0", intval($value));
+                if ($value <= 1) {
+                    $this->buffer = "\0";
+                } else {
+                    $this->buffer = str_repeat("\0", intval($value));
+                }
                 break;
             case 'string':
                 $this->position = 0;
